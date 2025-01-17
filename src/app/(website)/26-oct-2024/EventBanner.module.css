@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2; /* Matches the beige color in your image */
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.registerContent {
+  width: 23.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.registerButton {
+  background-color: #DC561E;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", system-ui;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.registerButton:hover {
+  background-color: #000000;
+  color: #DC561E;
+  transform: translateY(-5px); /* Adds a slight "lift" when hovering */
+}
+
+/* Animation for the form */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-family: "Montserrat", system-ui;
+  animation: fadeIn 0.8s ease-in-out; /* Fades in the form */
+}
+
+/* Flexbox styling for the input group */
+.inputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+/* Label styling */
+.inputLabel {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 0.2rem;
+  font-weight: bolder;
+}
+
+/* Input field styling with animations */
+.input {
+  border: 2.5px solid #DC561E; /* Orange border */
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: "Montserrat", system-ui;  
+  background-color: #e8dac5; /* Light beige input background */
+  width: 100%;
+  font-weight: bolder;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000000; /* Slightly brighter on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on focus */
+}
+
+/* Add fade-in for form when it's rendered */
+@keyframes formAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in animation for form */
+.formContainer {
+  animation: formAppear 0.5s ease-in-out;
+}
+@media (max-width: 480px) {
+  .registerContent{
+    width: 100%;
+  }
+}

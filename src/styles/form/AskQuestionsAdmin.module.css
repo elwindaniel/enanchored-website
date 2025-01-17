@@ -1,0 +1,68 @@
+/* /styles/form/AskQuestionsAdmin.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Container Styles */
+.adminContainer {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1000px; /* Set a max-width for better readability */
+  margin: 2rem auto; /* Center the container with some top and bottom margin */
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.adminContainer h2 {
+  color: #d6001c; /* Red color */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Questions List Styles */
+.questionsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.questionItem {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-left: 5px solid #d6001c; /* Red accent */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.questionItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Styles */
+.questionItem p {
+  margin: 0.5rem 0;
+}
+
+.questionItem strong {
+  color: #333;
+}
+
+.questionItem em {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .adminContainer {
+    padding: 1rem;
+  }
+
+  .questionItem {
+    padding: 0.75rem;
+  }
+}

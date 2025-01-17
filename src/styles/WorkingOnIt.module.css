@@ -1,0 +1,40 @@
+/* styles/WorkingOnIt.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #000; /* Set background color to black */
+  }
+  
+  .animation {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .workingText {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* Set text color to white for better contrast */
+  }
+  
+  .loader {
+    border: 8px solid #333; /* Dark grey to blend with black background */
+    border-top: 8px solid #fff; /* White to stand out against the black background */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
