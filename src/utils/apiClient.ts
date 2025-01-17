@@ -7,6 +7,7 @@ import axios, {
     InternalAxiosRequestConfig,
   } from 'axios';
   
+  
   // Create an Axios instance
   const apiClient: AxiosInstance = axios.create({
     baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || 'https://api.example.com',
