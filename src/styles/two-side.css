@@ -1,0 +1,19 @@
+.two-side-container{
+    display: flex;
+    background-color: var(--color-one);
+}
+.side-section{
+    flex: 1;
+}
+.side-section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+@media (max-width: 768px) {
+   .two-side-container{
+    flex-direction: column;
+   } 
+}
